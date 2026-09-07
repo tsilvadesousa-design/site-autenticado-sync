@@ -1,0 +1,20 @@
+{
+  "name": "site-autenticado-sync",
+  "version": "1.0.0",
+  "description": "Site com autenticação, sincronização em tempo real entre dispositivos e layout moderno",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build"
+  },
+  "keywords": ["authentication", "sync", "realtime", "firebase"],
+  "author": "tsilvadesousa-design",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
